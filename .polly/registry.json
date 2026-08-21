@@ -1,0 +1,23 @@
+{
+  "repo": "sanath-kantar/aspnet-demo-api",
+  "tasks": {
+    "ping-endpoint": {
+      "worktree": ".worktrees/ping-endpoint",
+      "branch": "polly/ping-endpoint",
+      "implementer": "claude_code",
+      "reviewer": "codex",
+      "pr": "https://github.com/sanath-kantar/aspnet-demo-api/pull/2",
+      "status": "ready_for_human_merge",
+      "review_notes": "No blocking issues. Non-blocking: leftover .http weatherforecast reference, NU1903 transitive advisory on Microsoft.OpenApi 2.0.0, missing final newline in test csproj."
+    },
+    "time-endpoint": {
+      "worktree": ".worktrees/time-endpoint",
+      "branch": "polly/time-endpoint",
+      "implementer": "codex",
+      "reviewer": "pi",
+      "pr": "https://github.com/sanath-kantar/aspnet-demo-api/pull/1",
+      "status": "ready_for_human_merge",
+      "review_notes": "No blocking issues. Suggestions only: prefer DateTimeOffset.UtcNow for explicitness, cosmetic newline/BOM in test csproj."
+    }
+  }
+}
